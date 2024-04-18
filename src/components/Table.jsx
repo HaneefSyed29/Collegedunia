@@ -94,19 +94,6 @@ const Table = () => {
               setSearchText(e.target.value);
             }}
           />
-          <button
-            className="bg-[#C48E88] rounded-full px-6 h-10 font-medium text-lg"
-            onClick={() => {
-              const filteredCollege = data.filter((res) => {
-                return res.collegeName
-                  .toLowerCase()
-                  .includes(searchText.toLowerCase());
-              });
-              setSearchCollege(filteredCollege);
-            }}
-          >
-            Search
-          </button>
         </div>
       </div>
       <InfiniteScroll
